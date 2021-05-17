@@ -1,0 +1,46 @@
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 90%;
+    margin-top: 2em;
+   
+    @media (min-width: $desktop-width) {
+        flex-direction: row; 
+        min-width: 50%;
+        margin-top: 0;
+    }
+}
+
+.header-menu__link--catalog,
+.header-menu__link--activation,
+.header-menu__link--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;    
+    font-size: 1em;
+    min-width: 145px;  
+    min-height: 43px;
+    margin: 0 4px;
+    border-radius: 10px;
+    background-color: $blue;
+    
+    @media (min-width: $desktop-width) {
+        font-size: 1em;
+        min-width: 145px;  
+        min-height: 43px;
+        margin: 0 4px;
+        border-radius: 10px;
+        background-color: $blue;
+    }
+}
+
+.header-menu__link {
+    margin-bottom: 0.5em;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1em;
+    width: 100%;
+    min-height: 250px;  
+    box-sizing: border-box;
+    background-color: $footer;    
+
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        justify-content: center;
+        min-height: 49px;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 250px;
+
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        max-width: 1000px;
+        min-height: 49px;
+        padding: 0;
+    }
+}

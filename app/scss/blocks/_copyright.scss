@@ -1,0 +1,23 @@
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 33%;
+}
+
+.copyright__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 28px;
+}
+
+.copyright__link {
+    color: #fff;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+        text-align: left;
+    }
+}
+

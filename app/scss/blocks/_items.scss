@@ -1,0 +1,80 @@
+.items {
+    display: flex;
+    width: 60%;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        justify-content: space-between; 
+        align-content: flex-start;       
+        width: 100%; 
+    }
+}
+
+.items__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 170px;
+    min-height: 260px;
+    padding: 10px 16px;    
+    margin-bottom: 1.5em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid $bg;
+}
+
+.items__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 136px;
+    min-width: 100%;
+}
+
+.items__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 0.4em;
+    min-height: 116px;
+}
+
+.items__content {
+    min-height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.items__link {
+    color: $blue;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.items__subject {
+    font-size: 14px;
+}
+
+.items__grade {
+    font-size: 14px;
+}
+
+.items__genre {
+    font-size: 11px;
+}
+
+.items__button {
+    min-width: 136px;
+    min-height: 25px;
+    border: 0px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: $blue;
+    cursor: pointer;
+}

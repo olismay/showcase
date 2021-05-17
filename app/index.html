@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Витрина</title>
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="page-body">
+    <svg style="display: none">
+        <symbol id="arrow" viewBox="0 0 15 25" >        
+           <path d="M1 1L5.043 8.41667L1 15.8333" stroke="#363636"/>
+        </symbol>            
+    </svg>   
+   
+    <header class="header">
+      <div class="header__wrapper">  
+       <div class="header-logo">
+        <a class="header-logo__link" href="#">
+            Облако знаний
+        </a>  
+        <div class="nav">
+          <span class="nav__toggle">
+          </span> 
+          <nav class="nav__wrapper">
+              <ul class="nav__list nav__list--closed">
+                   <li class="nav__item">
+                      <a class="nav__link" href="#">
+                        О проекте
+                      </a>    
+                   </li>
+                   <li class="nav__item">
+                      <a class="nav__link" href="#">
+                        Новости
+                      </a>    
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">
+                        Помощь
+                    </a>    
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">
+                        Скачать
+                    </a>    
+                </li>
+              </ul>    
+          </nav>
+        </div>     
+       </div> 
+       <div class="header-menu">  
+          <a class="header-menu__link header-menu__link--catalog" href="#"> 
+              Каталог
+          </a> 
+          <a class="header-menu__link header-menu__link--activation" href="#"> 
+              Активация
+          </a> 
+          <a class="header-menu__link header-menu__link--login" href="#"> 
+              Вход
+          </a>    
+       </div>  
+      </div>    
+    </header>    
+    <div class="wrapper"> 
+      <main class="page-main">
+        <h1 class="visually-hidden">Облако знаний</h1>
+
+        <section class="courses">
+            <h2 class="courses__heading">Витрина</h2> 
+            <div class="search">
+               <form class="search__form" id="form">
+               
+                    <select class="search__list search__list--subject" id="select" name="subject">
+                       <option id="select-header" selected>Все предметы</option>
+                       <option id="select-item">Алгебра</option>
+                       <option id="select-item">Английский язык</option>
+                       <option id="select-item">Биология</option>
+                       <option id="select-item">География</option>
+                       <option id="select-item">Геометрия</option>
+                       <option id="select-item">Демо-версия</option>
+                       <option id="select-item">Информатика</option>
+                       <option id="select-item">История</option>
+                       <option id="select-item">Литература</option>
+                       <option id="select-item">Математика</option>
+                       <option id="select-item">Обществознание</option>
+                       <option id="select-item">Окружающий мир</option>
+                       <option id="select-item">Робототехника</option>
+                       <option id="select-item">Русский язык</option>
+                       <option id="select-item">Физика</option>
+                       <option id="select-item">Химия</option>
+                    </select>    
+               
+                    <select class="search__list  search__list--genre" id="select" name="genre">
+                       <option id="select-header" selected>Все жанры</option>
+                       <option id="select-item">Демо</option>
+                       <option id="select-item">Задачник</option>
+                       <option id="select-item">Подготовка к ВПР</option>
+                       <option id="select-item">Подготовка к ЕГЭ</option>
+                       <option id="select-item">Рабочая тетрадь</option>
+                   </select>    
+             
+                   <select class="search__list search__list--grade" id="select" name="grade">
+                       <option id="select-header" selected>Все классы</option>
+                       <option id="select-item">1</option>
+                       <option id="select-item">2</option>
+                       <option id="select-item">3</option>
+                       <option id="select-item">4</option>
+                       <option id="select-item">5</option>
+                       <option id="select-item">6</option>
+                       <option id="select-item">7</option>
+                       <option id="select-item">8</option>
+                       <option id="select-item">9</option>
+                       <option id="select-item">10</option>
+                       <option id="select-item">11</option>
+                   </select>
+                 
+                <input 
+                    type="text" 
+                    class="search__input"
+                    name="search-input" 
+                    placeholder="Поиск"
+                    id="search-input"                    
+                >
+               
+                   <select class="search__list search__list--currency" id="select-currency" name="select-currency">
+                       <option id="item-currency-rubles" value="1" selected>Рубли</option>
+                       <option id="item-currency-bonus" value="2">Бонусы</option>
+                   </select>    
+              
+               </form>
+            </div> 
+         
+            <ul class="items" id="items-list">              
+            </ul>
+
+      </section>
+
+
+    </main>
+  </div>
+    <footer class="footer">
+        <div class="footer__wrapper">
+
+            <div class="copyright">
+              <div class="copyright__wrapper">  
+                <p class="copyright__text">
+                    © ООО «Физикон Лаб», 2013—2021
+                </p>    
+                <a class="copyright__link" href="#">
+                    Пользовательское соглашение
+                </a>    
+              </div>  
+            </div> 
+
+            <div class="social-networks">   
+                <a class="social-networks__link social-networks__link--twitter" href="#">
+                    <img class="social-networks__svg-icon" src="img/twitter.svg" width="29" height="29"></img>
+                </a>   
+                <a class="social-networks__link social-networks__link--vk" href="#"> 
+                    <img class="social-networks__svg-icon" src="img/vk.svg" width="29" height="29"></img>
+                </a> 
+                <a class="social-networks__link social-networks__link--facebook" href="#"> 
+                    <img class="social-networks__svg-icon" src="img/facebook.svg" width="29" height="29"></img>
+                </a> 
+                <a class="social-networks__link social-networks__link--instagram" href="#"> 
+                    <img class="social-networks__svg-icon" src="img/instagram.svg" width="29" height="29"></img>
+                </a>  
+            </div>    
+
+            <div class="contacts">
+             <div class="contacts__wrapper">   
+              <div class="contacts__details">  
+                <a class="contacts__link contacts__link--phone" href="tel.:+74993220757">
+                    +7 (499) 322-07-57
+                </a>   
+                &#44;
+                <a class="contacts__link contacts__link--email" href="mailto:info@imumk.ru">
+                    info@imumk.ru
+                </a> 
+              </div>  
+                <a class="contacts__link contacts__link--rules" href="#">
+                    Правила пользования сайтом
+                </a>  
+             </div>   
+            </div>    
+        </div>
+        
+    </footer>    
+    
+    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

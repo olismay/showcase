@@ -1,0 +1,27 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    flex-basis: 33%;    
+}
+
+.contacts__link {
+    color: #fff;
+}
+
+.contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    min-height: 28px;
+}
+
+.contacts__link--rules {
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+        text-align: right;
+    }
+}

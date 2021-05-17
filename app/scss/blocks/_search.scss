@@ -1,0 +1,50 @@
+.search__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+    }
+}
+
+.search__list:not(:last-of-type) {
+    min-height: 34px;
+    min-width: 230px;
+    padding-left: 0.5em;
+    margin-bottom: 0.9em;
+    border-radius: 6px;
+    border: 1px solid $border;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+}
+
+.search__list:last-of-type {
+    min-height: 34px;
+    min-width: 100px;
+    padding-left: 0.5em;
+    border-radius: 6px;
+    border: 1px solid $border;
+}
+
+.search__input {
+    min-height: 34px;    
+    padding-left: 0.5em;
+    margin-bottom: 0.9em;
+    border-radius: 6px;
+    border: 1px solid $border;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+}
+
+.search__list:last-of-type {
+    flex-basis: 10%;
+}
+
+.search__input:focus {
+    outline: none;
+}

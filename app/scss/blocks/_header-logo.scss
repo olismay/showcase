@@ -1,0 +1,26 @@
+.header-logo {
+    display: flex;
+}
+
+.header-logo__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 300;
+    text-decoration: none;
+    color: $blue;    
+   
+    font-size: 24px;
+  
+      @media (min-width: $desktop-width) {  
+          font-size: 34px; 
+          min-height: 73px;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          width: 282px;
+          cursor: pointer;
+          margin-right: 0.3em;   
+      }
+  }
+  
